@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>La herramienta Laravel</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="José Rodríguez Rico" />
+    <meta name ="description" content ="En este sitio web se expone información detallada sobre el framework Laravel." />
+    <meta name ="keywords" content ="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Framework Laravel</h1>
+        <nav> 
+            <a title ="Indice" accesskey="I" tabindex="1"  href="index.html">Indice</a> 
+            <a title ="Caracteristicas" accesskey="C" tabindex="2"   href="caracteristicas.html">Caracteristicas</a> 
+            <a title ="Libros" accesskey="L" tabindex="3"   href="libros.html">Libros</a>
+        </nav>
+    </header>
+   
+    <p>
+        Una vez informado sobre el framework Laravel nos gustaría que contestaras a una serie de preguntas sobre este.
+        El fin de este formulario es realizar una estadística a partir de los datos aportados y así aumentar el uso de Laravel.
+    </p>
+    <h2>Tu opinión importa:</h2>
+        <form name="Formulario">
+
+            <fieldset>
+                <legend>Datos:</legend>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" >
+                <label for="apellidos">Apellidos</label>
+                <input id="apellidos" type="text" >
+                <label for="edad">Edad</label>
+                <input id="edad" type="number" >
+                <label for="email">Email</label>
+                <input id="email" type="email">
+                <label for="fecha">F. Nacimiento</label>
+                <input id="fecha" type="date">              
+            </fieldset>
+            
+            <fieldset>
+                <legend>¿Has trabajado alguna vez con alguna de estas herramientas?</legend>
+                <label for="WordPress">WordPress</label>
+                <input id ="WordPress" type="checkbox" name ="pagina" value="WordPress" checked/>
+                <label for="Laravel">Laravel</label>
+                <input id ="Laravel" type="checkbox" name ="pagina" value="Laravel"/>
+                <label for="PHP">PHP</label>
+                <input id ="PHP" type="checkbox" name ="pagina" value="PHP"/>                
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Te ha gustado el post?</legend>
+                    <label for="si">Sí</label>
+                    <input id="si" type="radio" value="Sí" name="cono" checked>
+                    <label for="no">No</label>
+                    <input id="no" type="radio" value="No" name="cono">              
+            </fieldset>
+            <fieldset>
+                <legend>¿Algún consejo para mejorar la página?</legend>
+                    <p><textarea cols="100" rows="6" ></textarea>             
+            </fieldset>
+            <input id="boton" type="submit" value="Send the info">
+        </form>
+    
+        <footer>
+            <img src= "multimedia/HTML5.png" alt= "HTML5 válido!" />
+            <img src= "multimedia/CSS3.png" alt= "CSS3 válido!" />
+        </footer>
+
+</body>
+</html>
