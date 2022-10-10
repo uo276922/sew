@@ -6,19 +6,19 @@
 
 
 body{
-    background-color: rgb(236, 225, 178);
+    background-color: #faf1c7;
     padding: 0.625em;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: #000000;
 } 
 
 header{
-    background-color: rgb(221, 200, 105);
+    background-color: rgb(255, 235, 144);
     font-size: 1.875em;
     text-align: center;
     padding:0.0125em;
     border-style: dashed;
-    color: black;
+    color: #000000;
 }
 
 section{
@@ -27,11 +27,11 @@ section{
 }
 
 nav {
-    background-color: rgb(236, 225, 178);
+    background-color: #faf1c7;
     padding: 0.625em;
     text-align: right;
     margin-right: 0.625em;
-    color: black;
+    color: #000000;
 }
 
 aside{
@@ -47,18 +47,18 @@ h1{
 }
 
 h2{
-    background-color: rgb(221, 200, 105);
+    background-color: rgb(255, 235, 144);
     font-size: 1.875em;
     text-align: center;
     padding:0.5em;
     border-style: dashed;
-    color: black;
+    color: #000000;
 }
 
 p{
-    color: black;
+    color: #000000;
     font-size: 1.25em;
-    background-color: rgb(236, 225, 178);
+    background-color: #faf1c7;
     font-style: oblique;
 }
 
