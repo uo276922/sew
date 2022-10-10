@@ -21,10 +21,6 @@ header{
     color: #000000;
 }
 
-section{
-    
-    
-}
 
 nav {
     background-color: #faf1c7;
@@ -35,17 +31,11 @@ nav {
     color: #000000;
 }
 
-aside{
-    
-}
 
 footer{
     
 }
 
-h1{
-
-}
 
 h2{
     background-color: #fae6c7;
@@ -54,6 +44,9 @@ h2{
     padding:0.5em;
     border-style: dashed;
     color: #000000;
+    border-left-width: 40px;
+    border-right-width: 40px;
+    
 }
 
 p{
@@ -61,25 +54,77 @@ p{
     font-size: 1.25em;
     background-color: #faf1c7;
     font-style: oblique;
-    margin: 30px;
 }
 img{
     display: block;
     margin: auto;
 }
+video{
+    display: block;
+    margin: auto;
+}
+audio{
+    display: block;
+    margin: auto;
+}
 
 ul{
+    color: #000000;
+    background-color: #fae6c7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 
 }
 
 li{
+    color: #000000;
+    background-color: #fae6c7;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
+table{
+    color: #000000;
+    font-size: 1.25em;
+    background-color: #faf1c7;
+    font-style: oblique;
+    border-style: dotted;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+
+caption{
+    color: #000000;
+    font-size: 1.375em;
+    background-color: #fae6c7;
+    font-style: oblique;
+    font-weight: inherit;
+}
+
 tr{
+    background-color: #fcead0;
+    text-align: center;
+    color: #000000;
 
 }
 
 td{
-
+    background-color: #fcead0;
+    text-align: center;
+    color: #000000;
 }
+
+form{
+    color: #000000;
+    font-size: 1.25em;
+    background-color: #fae6c7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+
+fieldset{
+    color: #000000;
+    background-color: #faf1c7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
