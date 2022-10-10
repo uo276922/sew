@@ -13,7 +13,7 @@ body{
 } 
 
 header{
-    background-color: rgb(255, 247, 176);
+    background-color: rgb(247, 222, 1);
     font-size: 1.875em;
     text-align: center;
     padding:0.0125em;
@@ -47,7 +47,7 @@ h1{
 }
 
 h2{
-    background-color: rgb(255, 247, 176);
+    background-color: rgb(247, 222, 1);
     font-size: 1.875em;
     text-align: center;
     padding:0.5em;
