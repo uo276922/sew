@@ -13,7 +13,7 @@ body{
 } 
 
 header{
-    background-color: rgb(255, 235, 144);
+    background-color: rgb(255, 247, 176);
     font-size: 1.875em;
     text-align: center;
     padding:0.0125em;
@@ -47,7 +47,7 @@ h1{
 }
 
 h2{
-    background-color: rgb(255, 235, 144);
+    background-color: rgb(255, 247, 176);
     font-size: 1.875em;
     text-align: center;
     padding:0.5em;
@@ -60,6 +60,8 @@ p{
     font-size: 1.25em;
     background-color: #faf1c7;
     font-style: oblique;
+}
+img{
 }
 
 ul{
