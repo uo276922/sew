@@ -13,7 +13,7 @@ body{
 } 
 
 header{
-    background-color: rgb(247, 222, 1);
+    background-color: rgb(250, 244, 192);
     font-size: 1.875em;
     text-align: center;
     padding:0.0125em;
@@ -30,6 +30,7 @@ nav {
     background-color: #faf1c7;
     padding: 0.625em;
     text-align: right;
+    font-size: 1.275em;
     margin-right: 0.625em;
     color: #000000;
 }
@@ -47,7 +48,7 @@ h1{
 }
 
 h2{
-    background-color: rgb(247, 222, 1);
+    background-color: rgb(250, 244, 192);
     font-size: 1.875em;
     text-align: center;
     padding:0.5em;
