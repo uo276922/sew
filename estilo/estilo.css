@@ -13,7 +13,7 @@ body{
 } 
 
 header{
-    background-color: rgb(250, 244, 192);
+    background-color: #faf1c7;
     font-size: 1.875em;
     text-align: center;
     padding:0.0125em;
@@ -48,7 +48,7 @@ h1{
 }
 
 h2{
-    background-color: rgb(250, 244, 192);
+    background-color: #faf1c7;
     font-size: 1.875em;
     text-align: center;
     padding:0.5em;
