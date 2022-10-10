@@ -61,8 +61,11 @@ p{
     font-size: 1.25em;
     background-color: #faf1c7;
     font-style: oblique;
+    margin: 30px;
 }
 img{
+    display: block;
+    margin: auto;
 }
 
 ul{
