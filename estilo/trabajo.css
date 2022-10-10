@@ -9,8 +9,15 @@ header{
 
 section{
     background-color: rgb(187, 151, 52);
+    
 }
 
+nav {
+    background-color: rgb(41, 190, 141);
+    margin: 2em;
+    border-style: dashed;
+    padding: 2em;
+}
 aside{
     background-color: rgb(216, 64, 183);
 }
