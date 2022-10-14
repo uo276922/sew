@@ -1,0 +1,40 @@
+/*******************
+/* Autor: José Rodríguez Rico UO276922
+/* descripcion
+/*******************
+*/
+
+
+body{
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'nav nav'
+        'section section'
+        'aside aside'
+        'footer footer'
+    ;
+} 
+
+header{
+    grid-area: header;
+}
+
+
+nav {
+    grid-area: nav;
+}
+
+section{
+    grid-area: section;
+}
+
+aside{
+    grid-area: aside;
+}
+
+
+footer{
+    grid-area: footer;
+}
+
