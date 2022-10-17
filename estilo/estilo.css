@@ -43,9 +43,6 @@ h2{
     padding:0.5em;
     border-style: dashed;
     color: #000000;
-    border-left-width: 2.5em;
-    border-right-width: 2.5em;
-    
 }
 
 /*especificidad {0,0,1}*/
@@ -57,21 +54,17 @@ p{
 
 /*especificidad {0,0,1}*/
 img{
-    display: block;
-    margin: auto;
+    padding:2.5em;
 }
 
 /*especificidad {0,0,1}*/
 video{
-    display: block;
-    margin: auto;
-    border-style: dashed;
+    padding:2.5em;
 }
 
 /*especificidad {0,0,1}*/
 audio{
-    display: block;
-    margin: auto;
+    padding:2.5em;
 }
 
 /*especificidad {0,0,1}*/

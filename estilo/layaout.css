@@ -2,7 +2,7 @@
 /* Autor: José Rodríguez Rico UO276922
 /* Descripcion
 /* Hoja que aplica el formato grid layaout a los
-/* documentos de la web. Este está formado por dos columnas y 5 filas.
+/* documentos de la web. Este está formado por 4 columnas y 5 filas.
 /*******************
 */
 
@@ -10,11 +10,11 @@
 body{
     display: grid;
     grid-template-areas:
-        'header header'
-        'nav nav'
-        'section section'
-        'article article'
-        'footer footer'
+        'header header header header'
+        'nav nav nav nav'
+        'section section section section'
+        'article article article article'
+        'footer footer footer footer'
     ;
 } 
 
