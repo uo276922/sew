@@ -12,8 +12,8 @@ body{
     grid-template-areas:
         'header header header header'
         'nav nav nav nav'
-        'section section section section'
-        'article article article article'
+        'section section article article'
+        'section section article article'
         'footer footer footer footer'
     ;
 } 
