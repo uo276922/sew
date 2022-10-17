@@ -1,10 +1,12 @@
 /*******************
 /* Autor: José Rodríguez Rico UO276922
-/* descripcion
+/* Descripcion
+/* Hoja que aplica el formato grid layaout a los
+/* documentos de la web. Este está formado por dos columnas y 5 filas.
 /*******************
 */
 
-
+/*especificidad {0,0,1}*/
 body{
     display: grid;
     grid-template-areas:
@@ -16,24 +18,27 @@ body{
     ;
 } 
 
+/*especificidad {0,0,1}*/
 header{
     grid-area: header;
 }
 
-
+/*especificidad {0,0,1}*/
 nav {
     grid-area: nav;
 }
 
+/*especificidad {0,0,1}*/
 section{
     grid-area: section;
 }
 
+/*especificidad {0,0,1}*/
 aside{
     grid-area: aside;
 }
 
-
+/*especificidad {0,0,1}*/
 footer{
     grid-area: footer;
 }
