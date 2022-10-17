@@ -13,7 +13,7 @@ body{
         'header header'
         'nav nav'
         'section section'
-        'aside aside'
+        'article article'
         'footer footer'
     ;
 } 
@@ -34,8 +34,8 @@ section{
 }
 
 /*especificidad {0,0,1}*/
-aside{
-    grid-area: aside;
+article{
+    grid-area: article;
 }
 
 /*especificidad {0,0,1}*/
