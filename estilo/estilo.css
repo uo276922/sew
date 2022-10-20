@@ -43,7 +43,7 @@ h2{
     padding:0.5em;
     border-style: dashed;
     color: #000000;
-    margin:10px;
+    margin:0.625em;
     
 }
 
@@ -52,7 +52,7 @@ p{
     color: #000000;
     font-size: 1.25em;
     background-color: #faf1c7;
-    margin:10px;
+    margin:0.625em;
 }
 
 /*especificidad {0,0,1}*/
@@ -75,7 +75,7 @@ ul{
     color: #000000;
     background-color: #fae6c7;
     font-family: Arial, Helvetica, sans-serif;
-    margin:10px;
+    margin:0.625em;
 
 }
 
