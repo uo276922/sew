@@ -1,0 +1,80 @@
+/*******************
+/* Autor: José Rodríguez Rico UO276922
+/* Descripcion:
+/* En esta hoja se aplica el contenido relacionado con colores, fuentes
+/* tamaños, márgenes de los html de la prática.
+/* Toda la web sigue el formato de esta hoja de estilo
+/*******************
+*/
+
+/*especificidad {0,0,1}*/
+body{
+    background-color: #faf1c7;
+    padding: 0.625em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+} 
+
+/*especificidad {0,0,1}*/
+header{
+    background-color: #fae6c7;
+    font-size: 1.875em;
+    text-align: center;
+    padding:0.0125em;
+    border-style: dashed;
+    color: #000000;
+}
+
+
+/*especificidad {0,0,1}*/
+h2{
+    background-color: #fae6c7;
+    font-size: 1.875em;
+    text-align: center;
+    padding:0.5em;
+    border-style: dashed;
+    color: #000000;
+    margin:0.625em;
+    
+}
+
+/*especificidad {0,0,1}*/
+h3{
+    color: #000000;
+    background-color: #faf1c7;
+    margin:0.625em;
+    padding:0.5em;
+    
+}
+
+/*especificidad {0,0,1}*/
+h4{
+    color: #000000;
+    background-color: #faf1c7;
+    margin:0.625em;
+    padding:0.5em;
+    
+}
+
+/*especificidad {0,0,1}*/
+p{
+    color: #000000;
+    background-color: #faf1c7;
+    margin:0.625em;
+    padding:0.5em;
+    font-size: 1em;
+}
+
+/*especificidad {0,0,1}*/
+img{
+    padding:2.5em;
+}
+
+/*especificidad {0,0,1}*/
+video{
+    padding:2.5em;
+}
+
+
+
+
