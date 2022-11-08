@@ -96,12 +96,12 @@ input[value="9"]{
 }
 input[value="X"]{
     grid-area: botonX;
-    background-color: orange;
+    background-color: #1A1AFF;
     color: white;
 }
 input[value="/"]{
     grid-area: botonDiv;
-    background-color: orange;
+    background-color: #1A1AFF;
     color: white;
 }
 input[value="4"]{
@@ -115,13 +115,13 @@ input[value="6"]{
 }
 input[value="-"]{
     grid-area: botonMenos;
-    background-color: orange;
+    background-color: #1A1AFF;
     color: white;
 }
 
 input[value="Mrc"]{
     grid-area: botonMRC;
-    background-color: orange;
+    background-color: #1A1AFF;
     color: white;
 }
 input[value="1"]{
@@ -136,13 +136,13 @@ input[value="3"]{
 input[value="+"]{
     grid-area: botonMas;
     height: 6.7em;
-    background-color: orange;
+    background-color: #1A1AFF;
     color: white;
 }
 
 input[value="M-"]{
     grid-area: botonMMenos;
-    background-color: orange;
+    background-color: #1A1AFF;
     color: white;
 }
 input[value="0"]{
@@ -153,12 +153,12 @@ input[value="."]{
 }
 input[value="="]{
     grid-area: botonIgual;
-    background-color: red;
+    background-color: #A60303;
     color: white;
 }
 input[value="M+"]{
     grid-area: botonMMas;
-    background-color: orange;
+    background-color: #1A1AFF;
     color: white;
 }
 
