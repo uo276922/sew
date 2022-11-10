@@ -11,10 +11,10 @@ body{
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
     color:black;
+    
 }
 
 form{
-    
     display: grid;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ form{
     background-color: rgb(6, 122, 0);
     color: black;
     padding: 2em;
-    border-radius: 25px;
+    border-radius: 1.563em;
     margin:auto;
 } 
 
@@ -45,14 +45,19 @@ label{
 }
 
 
-input[id="pantalla"]{
+input[type="text"]{
     grid-area: pantalla;
-    width: 20em;
-    height: 5em;
+    height: 2.3em;
+    text-align:left;
+    color: black;
+    background-color: azure;
+    font-weight: bold;
+    font-size:2em;
+    width: 8em;
 }
 
 input[type="button"]{
-    border-radius: 5px;
+    border-radius: 0.313em;
     background-color: white;
     color: black;
     margin:0.2em;

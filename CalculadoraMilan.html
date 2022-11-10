@@ -25,30 +25,30 @@
 
         <form>
             <input type="text" id="pantalla">
-            <input type="button" value="C">
+            <input type="button" value="C" onclick="cal.borrar()">
             <input type="button" value="CE">
-            <input type="button" value="+/-">
-            <input type="button" value="√">
-            <input type="button" value="%">
-            <input type="button" value="7">
-            <input type="button" value="8">
-            <input type="button" value="9">
-            <input type="button" value="X">
-            <input type="button" value="/">
-            <input type="button" value="4">
-            <input type="button" value="5">
-            <input type="button" value="6">
-            <input type="button" value="-">
-            <input type="button" value="Mrc">
-            <input type="button" value="1">
-            <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="+">
-            <input type="button" value="M-">
-            <input type="button" value="0">
-            <input type="button" value=".">
-            <input type="button" value="=">
-            <input type="button" value="M+">
+            <input type="button" value="+/-" onclick="cal.masMenos()">
+            <input type="button" value="√" onclick="cal.raiz()">
+            <input type="button" value="%" onclick="cal.porcentaje()">
+            <input type="button" value="7" onclick="cal.digitos(7)">
+            <input type="button" value="8" onclick="cal.digitos(8)">
+            <input type="button" value="9" onclick="cal.digitos(9)">
+            <input type="button" value="X" onclick="cal.multiplicación()">
+            <input type="button" value="/" onclick="cal.division()">
+            <input type="button" value="4" onclick="cal.digitos(4)">
+            <input type="button" value="5" onclick="cal.digitos(5)">
+            <input type="button" value="6" onclick="cal.digitos(6)">
+            <input type="button" value="-" onclick="cal.resta()">
+            <input type="button" value="Mrc" onclick="cal.mrc()">
+            <input type="button" value="1" onclick="cal.digitos(1)">
+            <input type="button" value="2" onclick="cal.digitos(2)">
+            <input type="button" value="3" onclick="cal.digitos(3)">
+            <input type="button" value="+" onclick="cal.suma()">
+            <input type="button" value="M-" onclick="cal.mMenos()">
+            <input type="button" value="0" onclick="cal.digitos(0)">
+            <input type="button" value="." onclick="cal.punto()">
+            <input type="button" value="=" onclick="cal.igual()">
+            <input type="button" value="M+" onclick="cal.mMas()">
 
         </form>
 
