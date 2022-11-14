@@ -1,0 +1,331 @@
+/*******************
+/* Autor: José Rodríguez Rico UO276922
+/* descripcion
+/* En esta hoja se aplica el contenido relacionado con colores, fuentes
+/* tamaños, márgenes de los html de la prática.
+/* Toda la web sigue el formato de esta hoja de estilo
+/*******************
+*/
+
+/*especificidad {0,0,1}*/
+body{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    
+}
+
+/*especificidad {0,0,1}*/
+form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        'pantalla pantalla pantalla pantalla pantalla'
+        'boton1 boton2 boton3 . .'
+        'boton4 boton5 boton6 boton7 boton8'
+        'boton9 boton10 boton11 boton12 boton13'
+        'boton14 boton15 boton16 boton17 boton18'
+        'boton19 boton20 boton21 boton22 boton23'
+        'boton24 boton25 boton26 boton27 boton28'
+        'boton29 boton30 boton31 boton32 boton33'
+        'boton34 boton35 boton36 boton37 boton38'
+        'boton39 boton40 boton41 boton42 boton43'
+    ;
+    height: 25em;
+    width: 25em;
+    background-color: rgb(202, 202, 202);
+    color: black;
+    padding: 2em;
+    margin:auto;
+} 
+
+/*especificidad {0,0,1}*/
+h1{
+    background-color: white;
+    color: black;
+}
+
+/*especificidad {0,1,1}*/
+input[type="text"]{
+    grid-area: pantalla;
+    height: 1.8em;
+    text-align:left;
+    color: black;
+    background-color: azure;
+    font-weight: bold;
+    font-size:2em;
+    width: 12em;
+}
+
+/*especificidad {0,1,1}*/
+input[type="button"]{
+    background-color: white;
+    color: black;
+    margin:0.2em;
+    height: 2.3em;
+}
+
+
+/*especificidad {0,1,1}*//*especificidad {0,1,1}*//*especificidad {0,1,1}*/
+input[value="DEG"],input[value="RAD"],input[value="GRAD"]{
+    grid-area: boton1;
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="HYP"]{
+    grid-area: boton2;
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="F-E"]{
+    grid-area: boton3;
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="MC"]{
+    grid-area: boton4;
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="MR"]{
+    grid-area: boton5;
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="M+"]{
+    grid-area: boton6;
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="M-"]{
+    grid-area: boton7;
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="MS"]{
+    grid-area: boton8;
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="x^2"]{
+    grid-area: boton9;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="x^y"]{
+    grid-area: boton10;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*//*especificidad {0,1,1}*//*especificidad {0,1,1}*/
+input[value="sin"],input[value="asin"],input[value="sinh"]{
+    grid-area: boton11;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*//*especificidad {0,1,1}*//*especificidad {0,1,1}*/
+input[value="cos"],input[value="acos"],input[value="cosh"]{
+    grid-area: boton12;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*//*especificidad {0,1,1}*//*especificidad {0,1,1}*/
+input[value="tan"],input[value="atan"],input[value="tanh"]{
+    grid-area: boton13;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="√"]{
+    grid-area: boton14;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+
+/*especificidad {0,1,1}*/
+input[value="10^x"]{
+    grid-area: boton15;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="log"]{
+    grid-area: boton16;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="Exp"]{
+    grid-area: boton17;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="Mod"]{
+    grid-area: boton18;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="↑"]{
+    grid-area: boton19;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="CE"]{
+    grid-area: boton20;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="C"]{
+    grid-area: boton21;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="⌫"]{
+    grid-area: boton22;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="/"]{
+    grid-area: boton23;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="π"]{
+    grid-area: boton24;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="7"]{
+    grid-area: boton25;
+    font-weight: bold;
+}
+/*especificidad {0,1,1}*/
+input[value="8"]{
+    grid-area: boton26;
+    font-weight: bold;
+}
+/*especificidad {0,1,1}*/
+input[value="9"]{
+    grid-area: boton27;
+    font-weight: bold;
+}
+/*especificidad {0,1,1}*/
+input[value="X"]{
+    grid-area: boton28;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="n!"]{
+    grid-area: boton29;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="4"]{
+    grid-area: boton30;
+    font-weight: bold;
+}
+/*especificidad {0,1,1}*/
+input[value="5"]{
+    grid-area: boton31;
+    font-weight: bold;
+}
+/*especificidad {0,1,1}*/
+input[value="6"]{
+    grid-area: boton32;
+    font-weight: bold;
+}
+/*especificidad {0,1,1}*/
+input[value="-"]{
+    grid-area: boton33;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="+/-"]{
+    grid-area: boton34;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="1"]{
+    grid-area: boton35;
+    font-weight: bold;
+}
+/*especificidad {0,1,1}*/
+input[value="2"]{
+    grid-area: boton36;
+    font-weight: bold;
+}
+/*especificidad {0,1,1}*/
+input[value="3"]{
+    grid-area: boton37;
+    font-weight: bold;
+}
+/*especificidad {0,1,1}*/
+input[value="+"]{
+    grid-area: boton38;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="("]{
+    grid-area: boton39;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value=")"]{
+    grid-area: boton40;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="0"]{
+    grid-area: boton41;
+    font-weight: bold;
+}
+/*especificidad {0,1,1}*/
+input[value=","]{
+    grid-area: boton42;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+/*especificidad {0,1,1}*/
+input[value="="]{
+    grid-area: boton43;
+    background-color: rgb(227, 226, 226);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
