@@ -6,7 +6,7 @@
 /* Toda la web sigue el formato de esta hoja de estilo
 /*******************
 */
-
+/*especificidad {0,0,1}*/
 body{
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -14,6 +14,7 @@ body{
     
 }
 
+/*especificidad {0,0,1}*/
 form{
     display: grid;
     justify-content: center;
@@ -35,16 +36,18 @@ form{
     margin:auto;
 } 
 
+/*especificidad {0,0,1}*/
 h1{
     text-align: center;
     background-color: white;
     color: black;
 }
+/*especificidad {0,0,1}*/
 label{
-    opacity: 0;
+    padding: 25em;
 }
 
-
+/*especificidad {0,1,1}*/
 input[type="text"]{
     grid-area: pantalla;
     height: 2.3em;
@@ -56,6 +59,7 @@ input[type="text"]{
     width: 8em;
 }
 
+/*especificidad {0,1,1}*/
 input[type="button"]{
     border-radius: 0.313em;
     background-color: white;
@@ -65,79 +69,116 @@ input[type="button"]{
     font-weight: bold;
     
 }
+/*especificidad {0,1,1}*/
 input[value="C"]{
     grid-area: botonC;
     background-color: yellow;
     color: black;
 }
+
+/*especificidad {0,1,1}*/
 input[value="CE"]{
     grid-area: botonCE;
     background-color: yellow;
     color: black;
 }
+
+/*especificidad {0,1,1}*/
 input[value="+/-"]{
     grid-area: botonMM;
     background-color: yellow;
     color: black;
 }
+
+/*especificidad {0,1,1}*/
 input[value="√"]{
     grid-area: botonRaiz;
     background-color: yellow;
     color: black;
 }
+
+/*especificidad {0,1,1}*/
 input[value="%"]{
     grid-area: botonPor;
     background-color: yellow;
     color: black;
 }
+
+/*especificidad {0,1,1}*/
 input[value="7"]{
     grid-area: boton7;
 }
+
+/*especificidad {0,1,1}*/
 input[value="8"]{
     grid-area: boton8;
 }
+
+/*especificidad {0,1,1}*/
 input[value="9"]{
     grid-area: boton9;
 }
+
+/*especificidad {0,1,1}*/
 input[value="X"]{
     grid-area: botonX;
     background-color: #1A1AFF;
     color: white;
 }
+
+/*especificidad {0,1,1}*/
 input[value="/"]{
     grid-area: botonDiv;
     background-color: #1A1AFF;
     color: white;
 }
+
+/*especificidad {0,1,1}*/
 input[value="4"]{
     grid-area: boton4;
 }
+
+/*especificidad {0,1,1}*/
 input[value="5"]{
     grid-area: boton5;
 }
+
+/*especificidad {0,1,1}*/
 input[value="6"]{
     grid-area: boton6;
 }
+
+
+/*especificidad {0,1,1}*/
 input[value="-"]{
     grid-area: botonMenos;
     background-color: #1A1AFF;
     color: white;
 }
 
+/*especificidad {0,1,1}*/
 input[value="Mrc"]{
     grid-area: botonMRC;
     background-color: #1A1AFF;
     color: white;
 }
+
+/*especificidad {0,1,1}*/
 input[value="1"]{
     grid-area: boton1;
 }
+
+/*especificidad {0,1,1}*/
 input[value="2"]{
     grid-area: boton2;
 }
+
+/*especificidad {0,1,1}*/
 input[value="3"]{
     grid-area: boton3;
 }
+
+/*especificidad {0,1,1}*/
 input[value="+"]{
     grid-area: botonMas;
     height: 6.7em;
@@ -145,22 +186,31 @@ input[value="+"]{
     color: white;
 }
 
+/*especificidad {0,1,1}*/
 input[value="M-"]{
     grid-area: botonMMenos;
     background-color: #1A1AFF;
     color: white;
 }
+
+/*especificidad {0,1,1}*/
 input[value="0"]{
     grid-area: boton0;
 }
+
+/*especificidad {0,1,1}*/
 input[value="."]{
     grid-area: botonPunto;
 }
+
+/*especificidad {0,1,1}*/
 input[value="="]{
     grid-area: botonIgual;
     background-color: #A60303;
     color: white;
 }
+
+/*especificidad {0,1,1}*/
 input[value="M+"]{
     grid-area: botonMMas;
     background-color: #1A1AFF;

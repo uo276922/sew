@@ -3,101 +3,176 @@ class Calculadora{
     constructor(){
         this.pantalla="";
         this.totalAcu=new Number(0.0);
+        this.isOperacion=true;
+        this.simboloOPeracion="";
+        this.isOperacionValidad=false;
     }
 
     digitos(digito){
-        var numeroPantalla = new Number(document.getElementById("pantalla").value);
-        if (numeroPantalla == this.totalAcu){
-            this.pantalla=new Number(digito);
-            document.getElementById("pantalla").value = this.pantalla;
-        }else{
+        if (this.isOperacion){
+            this.isOperacionValidad=true;
             this.pantalla+=new Number(digito);
-            document.getElementById("pantalla").value = this.pantalla;
+            document.getElementsByTagName("input")[0].value = this.pantalla;
+        }else{
+            this.borrar();
+            this.isOperacionValidad=true;
+            this.isOperacion=true;
+            this.pantalla+=new Number(digito);
+            document.getElementsByTagName("input")[0].value= this.pantalla;
         }
-        
     }
     suma(){
-        this.pantalla+="+";
-        document.getElementById("pantalla").value = this.pantalla;
+        if (this.isOperacionValidad== true){
+            this.isOperacionValidad=false;
+            this.pantalla+="+";
+            this.simboloOPeracion="+";
+            this.isOperacion=true;
+            document.getElementsByTagName("input")[0].value = this.pantalla;
+        }
     }
     resta(){
-        this.pantalla+="-";
-        document.getElementById("pantalla").value = this.pantalla;
+        if (this.isOperacionValidad== true){
+            this.isOperacionValidad=false;
+            this.isOperacion=true;
+            this.simboloOPeracion="-";
+            this.pantalla+="-";
+            document.getElementsByTagName("input")[0].value = this.pantalla;
+        }
     }
 
     multiplicación(){
-        this.pantalla+="*";
-        document.getElementById("pantalla").value = this.pantalla;
+        if (this.isOperacionValidad== true){
+            this.isOperacionValidad=false;
+            this.isOperacion=true;
+            this.simboloOPeracion="*";
+            this.pantalla+="*";
+            document.getElementsByTagName("input")[0].value = this.pantalla;
+        }
     }
 
     division(){
-        this.pantalla+="/";
-        document.getElementById("pantalla").value = this.pantalla;
+        if (this.isOperacionValidad== true){
+            this.isOperacionValidad=false;
+            this.isOperacion=true;
+            this.simboloOPeracion="/";
+            this.pantalla+="/";
+            document.getElementsByTagName("input")[0].value = this.pantalla;
+        }
     }
     igual(){
-        this.totalAcu= eval(this.pantalla);
-        document.getElementById("pantalla").value = this.totalAcu;
-        this.pantalla=this.totalAcu;
+        if (this.isOperacionValidad){
+        var result = eval(this.pantalla);
+        if(result == "Infinity"){
+            this.isOperacion=false;
+            this.simboloOPeracion="";
+            this.borrarCE();
+        }else if(isNaN(result)){
+            this.isOperacion=false;
+            this.simboloOPeracion="";
+            this.borrarCE();
+        }
+        else{
+            this.pantalla=result;
+            this.simboloOPeracion="";
+            this.isOperacion=false;
+            document.getElementsByTagName("input")[0].value = this.pantalla;
+        }
+    }
     }
 
     borrar(){
+        this.isOperacionValidad=false;
+        this.pantalla=""
+        document.getElementsByTagName("input")[0].value = this.pantalla;
+    }
+
+    borrarCE(){
+        this.isOperacionValidad=false;
         this.pantalla=""
         this.totalAcu=new Number(0);
-        document.getElementById("pantalla").value = this.pantalla;
+        document.getElementsByTagName("input")[0].value = this.pantalla;
     }
 
     punto(){
-        this.pantalla+="."
-        document.getElementById("pantalla").value = this.pantalla;
+        if (this.isOperacionValidad){
+            this.isOperacionValidad=false;
+            this.pantalla+="."
+            this.isOperacion=true;
+            document.getElementsByTagName("input")[0].value = this.pantalla;
+        }
     }
 
     mrc(){
-        this.pantalla=this.totalAcu;
-        document.getElementById("pantalla").value = this.pantalla;
-        console.log(this.totalAcu);
+        if(this.isOperacion){
+            this.pantalla+=this.totalAcu;
+            this.isOperacion=false;
+            this.isOperacionValidad=true;
+            document.getElementsByTagName("input")[0].value = this.pantalla;
+            console.log(this.totalAcu);
+        }else{
+            this.pantalla=this.totalAcu;
+            this.isOperacion=false;
+            this.isOperacionValidad=true;
+            document.getElementsByTagName("input")[0].value = this.pantalla;
+            console.log(this.totalAcu);
+        }
     }
 
     mMenos(){
-        var numeroPantalla = new Number(document.getElementById("pantalla").value);
+        var numeroPantalla = new Number(document.getElementsByTagName("input")[0].value);
+        this.isOperacion=false;
         this.totalAcu= eval(this.totalAcu+"-"+numeroPantalla);
     }
 
     mMas(){
-        var numeroPantalla = new Number(document.getElementById("pantalla").value);
-        this.totalAc0=eval(numeroPantalla+"+"+this.totalAcu);
+        var numeroPantalla = new Number(document.getElementsByTagName("input")[0].value);
+        this.isOperacion=false;
+        this.totalAcu=eval(numeroPantalla+"+"+this.totalAcu);
     }
 
     masMenos(){
-        var numeroPantalla = new Number(document.getElementById("pantalla").value);
+        var numeroPantalla = new Number(document.getElementsByTagName("input")[0].value);
         if (numeroPantalla > 0){
             this.pantalla="-"+numeroPantalla;
-            document.getElementById("pantalla").value = this.pantalla;
+            document.getElementsByTagName("input")[0].value = this.pantalla;
         }else if (numeroPantalla<0){
             numeroPantalla=eval(numeroPantalla+"*"+"-1");
             this.pantalla=numeroPantalla;
-            document.getElementById("pantalla").value = this.pantalla;
+            document.getElementsByTagName("input")[0].value = this.pantalla;
         }else{
             this.pantalla=numeroPantalla;
-            document.getElementById("pantalla").value = this.pantalla;
+            document.getElementsByTagName("input")[0].value = this.pantalla;
         }
     }
 
     porcentaje(){
-        var numeroPantalla = new Number(document.getElementById("pantalla").value);
-        numeroPantalla = eval(numeroPantalla+"**(1/2)");
-        
-        this.pantalla=numeroPantalla;
-        this.totalAcu=numeroPantalla;
-        document.getElementById("pantalla").value = this.pantalla;
+        if (this.isOperacionValidad== true){
+            this.isOperacionValidad=false;
+            this.isOperacion=true;
+            this.simboloOPeracion="%";
+            this.pantalla+="%";
+            document.getElementsByTagName("input")[0].value = this.pantalla;
+        }
     }
 
     raiz(){
-        var numeroPantalla = new Number(document.getElementById("pantalla").value);
-        numeroPantalla = eval(numeroPantalla+"**(1/2)");
+        if(this.pantalla.toString().length && this.isOperacionValidad==true){
+                console.log("entra")
+                var numeroPantalla = eval(this.pantalla);
+                numeroPantalla = eval(numeroPantalla+"**(1/2)");
+                if(isNaN(numeroPantalla)){
+                    this.isOperacion=false;
+                    this.simboloOPeracion="";
+                    this.borrarCE();
+                }else{
+                    this.isOperacion=false;
+                    this.simboloOPeracion="";
+                    this.pantalla=numeroPantalla;
+                    document.getElementsByTagName("input")[0].value = this.pantalla;
+                }
+            
+        }
         
-        this.pantalla=numeroPantalla;
-        this.totalAcu=numeroPantalla;
-        document.getElementById("pantalla").value = this.pantalla;
     }
 
     teclado(){
@@ -125,8 +200,29 @@ class Calculadora{
             if(tecla == "C"){
                 this.borrar();
             }
+            if(tecla == "c"){
+                this.borrarCE();
+            }
             if (tecla=="Enter"){
                 this.igual();
+            }
+            if (tecla=="r"){
+                this.raiz();
+            }
+            if(tecla=="p"){
+                this.porcentaje();
+            }
+            if(tecla=="a"){
+                this.masMenos();
+            }
+            if(tecla == "m"){
+                this.mrc();
+            }
+            if(tecla== "n"){
+                this.mMas();
+            }
+            if(tecla=="b"){
+                this.mMenos();
             }
             
         });
