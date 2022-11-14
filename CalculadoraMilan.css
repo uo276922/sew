@@ -38,14 +38,10 @@ form{
 
 /*especificidad {0,0,1}*/
 h1{
-    text-align: center;
     background-color: white;
     color: black;
 }
-/*especificidad {0,0,1}*/
-label{
-    padding: 25em;
-}
+
 
 /*especificidad {0,1,1}*/
 input[type="text"]{
