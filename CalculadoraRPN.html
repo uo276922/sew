@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+    <head>
+        <!-- Datos que describen el documento -->
+        <meta charset="UTF-8">
+        <title>Ejercicio 5 java script</title>
+        <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css">
+        <!--Metadatos de los documentos HTML5-->
+        <meta name ="author" content ="José Rodríguez Rico">
+        <meta name ="description" content ="Ejercicio 5: Calculadora RPN">
+        <meta name ="keywords" content ="Calculadora">
+        <!--Definición de la ventana gráfica-->
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+        <script src="CalculadoraRPN.js" ></script>
+        
+    </head>
+
+    <body>
+        <h1>
+            Calculadora RPN
+        </h1>
+        
+        <label for="pantalla">Autor: José Rodríguez Rico</label>
+        <label for="pantalla2" >Versión: V1.0</label>
+
+        <form>
+
+            <textarea id="pantalla" cols="50" disabled></textarea>
+            <input type="text" id="pantalla2" name="Pantalla" disabled>
+            <input type="button" value = "Shift" onClick="cal.shift()">
+            <input type="button" value = "sin" onClick="cal.sin()">
+            <input type="button" value = "cos" onClick="cal.cos()">
+            <input type="button" value = "tan" onClick="cal.tan()">
+            <input type="button" value = "7" onClick = "cal.digitos(7)">
+            <input type="button" value = "8" onClick = "cal.digitos(8)">
+            <input type="button" value = "9" onClick = "cal.digitos(9)">
+            <input type="button" value = "/" onClick = "cal.division()">
+            <input type="button" value = "4" onClick = "cal.digitos(4)">
+            <input type="button" value = "5" onClick = "cal.digitos(5)">
+            <input type="button" value = "6" onClick = "cal.digitos(6)">
+            <input type="button" value = "*" onClick = "cal.multiplicacion()">
+            <input type="button" value = "1" onClick = "cal.digitos(1)">
+            <input type="button" value = "2" onClick = "cal.digitos(2)">
+            <input type="button" value = "3" onClick = "cal.digitos(3)">
+            <input type="button" value = "-" onClick = "cal.resta()">
+            <input type="button" value = "0" onClick = "cal.digitos(0)">
+            <input type="button" value = "." onClick = "cal.punto()">
+            <input type="button" value = "CE" onClick = "cal.borrarCE()">
+            <input type="button" value = "+" onClick = "cal.suma()">
+            <input type="button" value = "Enter" onClick = "cal.enter()">
+            <input type="submit" value="Send the info">
+
+            
+
+        </form>
+
+        <footer>
+            <img src= "multimedia/HTML5.png" alt= "HTML5 válido!">
+            <img src= "multimedia/CSS3.png" alt= "CSS3 válido!">
+        </footer>
+    </body>
+</html>
