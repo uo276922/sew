@@ -47,7 +47,7 @@ h1{
 input[type="text"]{
     grid-area: pantalla;
     height: 2.3em;
-    text-align:left;
+    text-align: right;
     color: black;
     background-color: azure;
     font-weight: bold;

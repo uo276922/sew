@@ -6,6 +6,7 @@ class Calculadora{
         this.isOperacion=true;
         this.simboloOPeracion="";
         this.isOperacionValidad=false;
+        this.pantallaAlmacen="";
     }
 
     digitos(digito){
@@ -61,23 +62,36 @@ class Calculadora{
     }
     igual(){
         if (this.isOperacionValidad){
-        var result = eval(this.pantalla);
-        if(result == "Infinity"){
-            this.isOperacion=false;
-            this.simboloOPeracion="";
-            this.borrarCE();
-        }else if(isNaN(result)){
-            this.isOperacion=false;
-            this.simboloOPeracion="";
-            this.borrarCE();
+            if (this.isOperacion){
+                
+                var arrayOperacion = this.pantalla.split(this.simboloOPeracion);
+                if (arrayOperacion[1].includes("%")){
+                    var  number = arrayOperacion[1].split("%");
+                    var result = new Number(eval(arrayOperacion[0]+this.simboloOPeracion+"("+number[0]+"/100)"));
+                }else{
+                    this.pantallaAlmacen=this.simboloOPeracion+arrayOperacion[1];
+                    var result = new Number(eval(this.pantalla));
+                }
+            }else{
+                var result = new Number(eval(this.pantalla+this.pantallaAlmacen));
+            }
+            
+            if(result == "Infinity"){
+                this.isOperacion=false;
+                this.simboloOPeracion="";
+                this.borrarCE();
+            }else if(isNaN(result)){
+                this.isOperacion=false;
+                this.simboloOPeracion="";
+                this.borrarCE();
+            }
+            else{
+                this.pantalla=result;
+                this.simboloOPeracion="";
+                this.isOperacion=false;
+                document.getElementsByTagName("input")[0].value = this.pantalla;
+            }
         }
-        else{
-            this.pantalla=result;
-            this.simboloOPeracion="";
-            this.isOperacion=false;
-            document.getElementsByTagName("input")[0].value = this.pantalla;
-        }
-    }
     }
 
     borrar(){
@@ -105,7 +119,7 @@ class Calculadora{
     mrc(){
         if(this.isOperacion){
             this.pantalla+=this.totalAcu;
-            this.isOperacion=false;
+            this.isOperacion=true;
             this.isOperacionValidad=true;
             document.getElementsByTagName("input")[0].value = this.pantalla;
             console.log(this.totalAcu);
@@ -121,13 +135,13 @@ class Calculadora{
     mMenos(){
         var numeroPantalla = new Number(document.getElementsByTagName("input")[0].value);
         this.isOperacion=false;
-        this.totalAcu= eval(this.totalAcu+"-"+numeroPantalla);
+        this.totalAcu= new Number(eval(this.totalAcu+"-"+numeroPantalla));
     }
 
     mMas(){
         var numeroPantalla = new Number(document.getElementsByTagName("input")[0].value);
         this.isOperacion=false;
-        this.totalAcu=eval(numeroPantalla+"+"+this.totalAcu);
+        this.totalAcu= new Number(eval(numeroPantalla+"+"+this.totalAcu));
     }
 
     masMenos(){
@@ -147,9 +161,8 @@ class Calculadora{
 
     porcentaje(){
         if (this.isOperacionValidad== true){
-            this.isOperacionValidad=false;
+            this.isOperacionValidad=true;
             this.isOperacion=true;
-            this.simboloOPeracion="%";
             this.pantalla+="%";
             document.getElementsByTagName("input")[0].value = this.pantalla;
         }
@@ -158,8 +171,8 @@ class Calculadora{
     raiz(){
         if(this.pantalla.toString().length && this.isOperacionValidad==true){
                 console.log("entra")
-                var numeroPantalla = eval(this.pantalla);
-                numeroPantalla = eval(numeroPantalla+"**(1/2)");
+                var numeroPantalla = new Number(eval(this.pantalla));
+                numeroPantalla = new Number(eval(numeroPantalla+"**(1/2)"));
                 if(isNaN(numeroPantalla)){
                     this.isOperacion=false;
                     this.simboloOPeracion="";
