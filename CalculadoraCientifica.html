@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+    <head>
+        <!-- Datos que describen el documento -->
+        <meta charset="UTF-8">
+        <title>Ejercicio 4 java script</title>
+        <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css">
+        <!--Metadatos de los documentos HTML5-->
+        <meta name ="author" content ="José Rodríguez Rico">
+        <meta name ="description" content ="Ejercicio 4: Calculadora Cientifica">
+        <meta name ="keywords" content ="Calculadora">
+        <!--Definición de la ventana gráfica-->
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+        <script src="CalculadoraCientifica.js" ></script>
+        
+    </head>
+
+    <body>
+        <h1>
+            Calculadora Cientifica
+        </h1>
+        
+        <label for="pantalla">Autor: José Rodríguez Rico</label>
+
+        <form>
+            <input type="text" id="pantalla" name="Pantalla" disabled>
+            <input type="button" value="DEG" onclick="cal.deg()">
+            <input type="button" value="HYP" onclick="cal.hyp()">
+            <input type="button" value="F-E" onclick="cal.fe()">
+            <input type="button" value="MC" onclick="cal.mc()">
+            <input type="button" value="MR" onclick="cal.mrc()">
+            <input type="button" value="M+" onclick="cal.mMas()">
+            <input type="button" value="M-" onclick="cal.mMenos()">
+            <input type="button" value="MS" onclick="cal.ms()">
+            <input type="button" value="x^2" onclick="cal.elevarCuadrado()">
+            <input type="button" value="x^y" onclick="cal.elevarAy()">
+            <input type="button" value="sin" onclick="cal.sin()">
+            <input type="button" value="cos" onclick="cal.cos()">
+            <input type="button" value="tan" onclick="cal.tan()">
+            <input type="button" value="√" onclick="cal.raiz()">
+            <input type="button" value="10^x" onclick="cal.diezElevado()">
+            <input type="button" value="log" onclick="cal.log()">
+            <input type="button" value="Exp" onclick="cal.exp()">
+            <input type="button" value="Mod" onclick="cal.mod()">
+            <input type="button" value="↑" onclick="cal.flechaArriba()">
+            <input type="button" value="CE" onclick="cal.borrarCE()">
+            <input type="button" value="C" onclick="cal.borrar()">
+            <input type="button" value="⌫" onclick="cal.suprimir()">
+            <input type="button" value="/" onclick="cal.division()">
+            <input type="button" value="π" onclick="cal.pi()">
+            <input type="button" value="7" onclick="cal.digitos(7)">
+            <input type="button" value="8" onclick="cal.digitos(8)">
+            <input type="button" value="9" onclick="cal.digitos(9)">
+            <input type="button" value="X" onclick="cal.multiplicación()">
+            <input type="button" value="n!" onclick="cal.factorial()">
+            <input type="button" value="4" onclick="cal.digitos(4)">
+            <input type="button" value="5" onclick="cal.digitos(5)">
+            <input type="button" value="6" onclick="cal.digitos(6)">
+            <input type="button" value="-" onclick="cal.resta()">
+            <input type="button" value="+/-" onclick="cal.masMenos()">
+            <input type="button" value="1" onclick="cal.digitos(1)">
+            <input type="button" value="2" onclick="cal.digitos(2)">
+            <input type="button" value="3" onclick="cal.digitos(3)">
+            <input type="button" value="+" onclick="cal.suma()">
+            <input type="button" value="(" onclick="cal.parentesisIzq()">
+            <input type="button" value=")" onclick="cal.parentesisDer()">
+            <input type="button" value="0" onclick="cal.digitos(0)">
+            <input type="button" value="," onclick="cal.punto()">
+            <input type="button" value="=" onclick="cal.igual()">
+            <input type="submit" value="Send the info">
+
+        </form>
+
+        <footer>
+            <img src= "multimedia/HTML5.png" alt= "HTML5 válido!">
+            <img src= "multimedia/CSS3.png" alt= "CSS3 válido!">
+        </footer>
+    </body>
+</html>
