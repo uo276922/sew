@@ -1,0 +1,25 @@
+/* TEAM */
+
+	UI developer: Juan Perico
+	Twitter: @juanjuan
+	From: Barcelona, Catalonia, Spain
+
+	Graphic designer: María Robledo
+	Twitter: @marimari
+	From: Alcaraz, Albacete, Spain
+
+	Web designer: Sonia Sánchez
+	Twitter: @soniasonia
+	From: Sevilla, Andalucia, Spain
+
+/* THANKS */
+
+	EN Translator: barack Obama
+	Twitter: @obamaobama
+	From: Kapiolani, EEUU
+
+/* SITE */
+	Last update: 2012/02/04
+	Language: Català / Czech / Deutsch / English / Castellano / Japanese / Dutch / Russian / Chinese
+	Doctype: HTML5
+	IDE: Sublime Text, Notepad++, FileZilla, Photoshop

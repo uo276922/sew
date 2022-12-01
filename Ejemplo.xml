@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personas SYSTEM "personas.dtd">
+<personas>  
+    <persona nombre="José" apellidos="Rodríguez Rico" fecha_nacimiento="2001-04-06">
+		<datos>
+			<lugar_nacimiento>Oviedo</lugar_nacimiento>
+			<coordenadas_nacimiento>Latitud:43.356991 Longitud:-5.868072 Altitud:232</coordenadas_nacimiento>
+			<lugar_residencia>Bustoburniego</lugar_residencia>
+			<coordenadas_residencia>Latitud:43.393453 Longitud:-6.465351 Altitud:415</coordenadas_residencia>
+			<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868640/jose_cxlh8p.png</fotografia>
+			<video>https://res.cloudinary.com/dyoejqhka/video/upload/v1666869803/videoXML_evx5am.mp4</video>
+			<comentario>Este soy yo alumno de Ingeniería Informática</comentario>
+		</datos>
+		<persona nombre="Pablo" apellidos="Álvarez García" fecha_nacimiento="2001-07-02">
+			<datos>
+				<lugar_nacimiento>Oviedo</lugar_nacimiento>
+				<coordenadas_nacimiento>Latitud:43.356991 Longitud:-5.868072 Altitud:232</coordenadas_nacimiento>
+				<lugar_residencia>Barredo</lugar_residencia>
+				<coordenadas_residencia>Latitud:43.321129 Longitud:-6.445196 Altitud:514</coordenadas_residencia>
+				<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868640/barreo_ruxgrh.png</fotografia>
+				<comentario>Estudio enfermería en Ponferrada</comentario>
+			</datos>
+			<persona nombre="Natalia" apellidos="Fernández Riego" fecha_nacimiento="2001-06-21">
+				<datos>
+					<lugar_nacimiento>Cangas del Narcea</lugar_nacimiento>
+					<coordenadas_nacimiento>Latitud:43.176696 Longitud:-6.548603 Altitud:376</coordenadas_nacimiento>
+					<lugar_residencia>Semellones</lugar_residencia>
+					<coordenadas_residencia>Latitud:43.284388 Longitud:-6.480875 Altitud:517</coordenadas_residencia>
+					<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868641/natalia_im9atl.png</fotografia>
+					<comentario>Me gustan los perros y los ordenadores</comentario>
+				</datos>
+			</persona>
+			<persona nombre="Lara" apellidos="Fernández Boto" fecha_nacimiento="2001-02-13">
+				<datos>
+					<lugar_nacimiento>Cangas del Narcea</lugar_nacimiento>
+					<coordenadas_nacimiento>Latitud:43.176696 Longitud:-6.548603 Altitud:376</coordenadas_nacimiento>
+					<lugar_residencia>Tineo</lugar_residencia>
+					<coordenadas_residencia>Latitud:43.337416 Longitud:-6.412718 Altitud:654</coordenadas_residencia>
+					<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868640/lara_kcjzff.png</fotografia>
+					<comentario>Se me da muy bien el inglés</comentario>
+				</datos>
+			</persona>
+			<persona nombre="Pablo Francisco" apellidos="Cera Fernández" fecha_nacimiento="2001-07-07">
+				<datos>
+					<lugar_nacimiento>León</lugar_nacimiento>
+					<coordenadas_nacimiento>Latitud:42.604485 Longitud:-5.588035 Altitud:837</coordenadas_nacimiento>
+					<lugar_residencia>Tineo</lugar_residencia>
+					<coordenadas_residencia>Latitud:43.337416 Longitud:-6.412718 Altitud:654</coordenadas_residencia>
+					<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868641/cera_kazhwf.png</fotografia>
+					<comentario>De profesión militar y de afición militar</comentario>
+				</datos>
+			</persona>
+		</persona>
+		<persona nombre="Martín" apellidos="Fernández González" fecha_nacimiento="2001-05-08">
+			<datos>
+				<lugar_nacimiento>Oviedo</lugar_nacimiento>
+				<coordenadas_nacimiento>Latitud:43.356991 Longitud:-5.868072 Altitud:232</coordenadas_nacimiento>
+				<lugar_residencia>Ribadeo</lugar_residencia>
+				<coordenadas_residencia>Latitud:43.538712 Longitud:-7.044420 Altitud:500</coordenadas_residencia>
+				<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868641/martin_sectpg.png</fotografia>
+				<comentario>Especialista en mongoDB y java script</comentario>
+			</datos>
+			<persona nombre="Jorge" apellidos="López Pelaez" fecha_nacimiento="2001-06-27">
+				<datos>
+					<lugar_nacimiento>Oviedo</lugar_nacimiento>
+					<coordenadas_nacimiento>Latitud:43.356991 Longitud:-5.868072 Altitud:232</coordenadas_nacimiento>
+					<lugar_residencia>Colloto</lugar_residencia>
+					<coordenadas_residencia>Latitud:43.376523 Longitud:-5.798634 Altitud:232</coordenadas_residencia>
+					<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868640/jorge_mhbncf.png</fotografia>
+					<comentario>Si pudiera ser un personaje sería, Ronoroa Zoro</comentario>
+				</datos>
+			</persona>
+			<persona nombre="Tania" apellidos="Bajo García" fecha_nacimiento="2001-02-19">
+				<datos>
+					<lugar_nacimiento>Gijón</lugar_nacimiento>
+					<coordenadas_nacimiento>Latitud:43.525308 Longitud:-5.607525 Altitud:3</coordenadas_nacimiento>
+					<lugar_residencia>Gijón</lugar_residencia>
+					<coordenadas_residencia>Latitud:43.526033 Longitud:-5.595863 Altitud:3</coordenadas_residencia>
+					<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868642/tania_lxll2m.png</fotografia>
+					<comentario>Del sporting desde pequeñita</comentario>
+				</datos>
+			</persona>
+			<persona nombre="Adrían" apellidos="Santamarina Fernández" fecha_nacimiento="2001-04-13">
+				<datos>
+					<lugar_nacimiento>Gijón</lugar_nacimiento>
+					<coordenadas_nacimiento>Latitud:43.525308 Longitud:-5.607525 Altitud:3</coordenadas_nacimiento>
+					<lugar_residencia>Langreo</lugar_residencia>
+					<coordenadas_residencia>Latitud:43.305005 Longitud:-5.6924035 Altitud:1021</coordenadas_residencia>
+					<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868642/adrisanta_bqdgym.png</fotografia>
+					<comentario>Jugando a clash royale desde 2013</comentario>
+				</datos>
+			</persona>
+		</persona>
+		<persona nombre="Eva" apellidos="Díaz Mori" fecha_nacimiento="2001-06-02">
+			<datos>
+				<lugar_nacimiento>Gijón</lugar_nacimiento>
+				<coordenadas_nacimiento>Latitud:43.525308 Longitud:-5.607525 Altitud:3</coordenadas_nacimiento>
+				<lugar_residencia>Padua</lugar_residencia>
+				<coordenadas_residencia>Latitud:45.414918 Longitud:11.864120 Altitud:12</coordenadas_residencia>
+				<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868641/eva_cudyk8.png</fotografia>
+				<comentario>Sono Eva e parlo perfettamente l'italiano</comentario>
+			</datos>
+			<persona nombre="Marcos" apellidos="Bueno Rodríguez" fecha_nacimiento="2001-04-19">
+				<datos>
+					<lugar_nacimiento>Oviedo</lugar_nacimiento>
+					<coordenadas_nacimiento>Latitud:43.356991 Longitud:-5.868072 Altitud:232</coordenadas_nacimiento>
+					<lugar_residencia>Ankara</lugar_residencia>
+					<coordenadas_residencia>Latitud:39.947874 Longitud:32.799521 Altitud:938</coordenadas_residencia>
+					<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868641/marcos_ysymje.png</fotografia>
+					<comentario>De Erasmus por Turquía y de paso veo la final de la Champions</comentario>
+				</datos>
+			</persona>
+			<persona nombre="Marta" apellidos="Fernández Gónzalez" fecha_nacimiento="2001-10-17">
+				<datos>
+					<lugar_nacimiento>Gijón</lugar_nacimiento>
+					<coordenadas_nacimiento>Latitud:43.525308 Longitud:-5.607525 Altitud:3</coordenadas_nacimiento>
+					<lugar_residencia>Benevento</lugar_residencia>
+					<coordenadas_residencia>Latitud:41.127998 Longitud:14.771316 Altitud:135</coordenadas_residencia>
+					<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868641/marta_coyr3u.png</fotografia>
+					<comentario>Un día en Nápoles, otro en zagreb, otro en Roma...</comentario>
+				</datos>
+			</persona>
+			<persona nombre="Lucas" apellidos="Martínez Rego" fecha_nacimiento="2001-10-25">
+				<datos>
+					<lugar_nacimiento>Gijón</lugar_nacimiento>
+					<coordenadas_nacimiento>Latitud:43.525308 Longitud:-5.607525 Altitud:3</coordenadas_nacimiento>
+					<lugar_residencia>Gijón</lugar_residencia>
+					<coordenadas_residencia>Latitud:43.518727 Longitud:-5.672232 Altitud:3</coordenadas_residencia>
+					<fotografia>https://res.cloudinary.com/dyoejqhka/image/upload/v1666868641/lucas_mfh5gi.png</fotografia>
+					<comentario>Odio los perros y me encantan los gatos</comentario>
+				</datos>
+			</persona>
+		</persona>
+	</persona>
+</personas>
