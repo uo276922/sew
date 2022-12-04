@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Ejercicio 8 JQuery</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio9.css">
+    <!--Metadatos de los documentos HTML5-->
+    <meta name="author" content="José Rodríguez Rico">
+    <meta name="description" content="Ejercicio para sacar datos de una API en formato JSON">
+    <meta name="keywords" content="Metereológica">
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio9.js"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+
+
+    <h1>Información Metereológica</h1>
+
+
+    <section>
+        <h2>Ciudades de los miembros de la red social</h2>
+        <input type="button" value="Oviedo" onclick="object.verDatos('Oviedo')">
+        <input type="button" value="Gijon" onclick="object.verDatos('Gijon')">
+        <input type="button" value="Padua" onclick="object.verDatos('Padova')">
+        <input type="button" value="Ankara" onclick="object.verDatos('Ankara')">
+        <input type="button" value="Tineo" onclick="object.verDatos('Tineo')">
+        <h3>Datos ciudad:</h3><p><img src="https://openweathermap.org/img/w/02d.png" alt="algo"></p><ul><li>Ciudad: Ankara</li><li>Longitud: 32.8543 grados</li><li>Latitud: 39.9199 grados</li><li>País: TR</li><li>Amanece a las: 5:53:51</li><li>Oscurece a las: 15:23:54</li><li>Temperatura: 8.97 grados Celsius</li><li>Temperatura mínima: 7.58 grados Celsius</li><li>Temperatura máxima: 11.84 grados Celsius</li><li>Temperatura (unidades): celsius</li><li>Humedad: 73 %</li><li>Presión: 1024 hPa</li><li>Velocidad del viento: 1.03 metros/segundo</li><li>Nombre del viento: Calm</li><li>Dirección del viento: undefined grados</li><li>Código del viento: undefined</li><li>Nombre del viento: undefined</li><li>Nubosidad: 20</li><li>Nombre nubosidad: few clouds</li><li>Visibilidad: 10000 metros</li><li>Precipitación valor: undefined</li><li>Precipitación modo: no</li><li>Descripción: algo de nubes</li><li>Hora de la medida: 9:49:03</li><li>Fecha de la medida: 4/12/2022</li></ul>
+    </section>
+    
+
+    <footer>
+        
+        <img src="multimedia/HTML5.png" alt="HTML5 válido!">
+        <img src="multimedia/CSS3.png" alt="CSS3 válido!">
+    </footer>
+
+
+</body></html>
