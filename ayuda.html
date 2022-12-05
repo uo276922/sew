@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
 
+<!DOCTYPE HTML>
+
 <html lang="es">
     <head>
         <!-- Datos que describen el documento -->
@@ -18,61 +20,45 @@
 
     <body>
         <h1>
-            Instrucciones de Uso Calculadora RPN
+            Calculadora RPN
         </h1>
-
-        <nav> 
-            <a title ="Calculadora" accesskey="C" tabindex="1"  href="CalculadoraRPN.html">Calculadora</a>
-            <a title ="Ayuda" accesskey="A" tabindex="1"  href="ayuda.html">Como usar</a> 
-        </nav>
         
-        <h2>Uso general</h2>
+        <label for="pantalla">Autor: José Rodríguez Rico</label>
+        <label for="pantalla2" >Versión: V1.0</label>
 
-        <p>
-            Las calculadoras RPN funcionan diferente a las calculadoras convencionales. Estas realizan las operaciones
-            através de una pila que almacena los valores de uno en uno. 
-        </p>
-        <p>
-            La forma de apilar un valor en la calculadora es através de la tecla Enter que aparece en la esquina inferior derecha.
-            Una vez apilados los valores necesarios para realizar la operación solo hace falta pulsar el operador de la operación.
-        </p>
+        <form>
 
-        <h2>Ejemplos operaciones basicas</h2>
-        <p>Todas las operaciones son de carácter binario. Es decir, se operan los valores de dos en dos.</p>
-        <p>Los siguientes ejemplos son apicables a Suma,resta, multiplicacion y división</p>
-        <p>Suma dos valores: Para realizar la operación suma de 5+4 se deben seguir los siguientes pasos:</p>
-        <ul>
-            <li>Se introduce el valor 5 y se pulsa Enter</li>
-            <li>Se introduce el valor 4 y se pulsa Enter</li>
-            <li>Se pulsa el operador de + hasta que solo quede un valor. El objetivo es que en la pantalla grande únicamente se registre un valor.
-                Por lo que es ir pulsando el botoón + y los valores se irán sumando de dos a dos.
-            </li>
-        </ul>
+            <textarea id="pantalla" cols="50" disabled></textarea>
+            <input type="text" id="pantalla2" name="Pantalla" disabled>
+            <input type="button" value = "Shift" onClick="cal.shift()">
+            <input type="button" value = "sin" onClick="cal.sin()">
+            <input type="button" value = "cos" onClick="cal.cos()">
+            <input type="button" value = "tan" onClick="cal.tan()">
+            <input type="button" value = "7" onClick = "cal.digitos(7)">
+            <input type="button" value = "8" onClick = "cal.digitos(8)">
+            <input type="button" value = "9" onClick = "cal.digitos(9)">
+            <input type="button" value = "/" onClick = "cal.division()">
+            <input type="button" value = "4" onClick = "cal.digitos(4)">
+            <input type="button" value = "5" onClick = "cal.digitos(5)">
+            <input type="button" value = "6" onClick = "cal.digitos(6)">
+            <input type="button" value = "*" onClick = "cal.multiplicacion()">
+            <input type="button" value = "1" onClick = "cal.digitos(1)">
+            <input type="button" value = "2" onClick = "cal.digitos(2)">
+            <input type="button" value = "3" onClick = "cal.digitos(3)">
+            <input type="button" value = "-" onClick = "cal.resta()">
+            <input type="button" value = "0" onClick = "cal.digitos(0)">
+            <input type="button" value = "." onClick = "cal.punto()">
+            <input type="button" value = "CE" onClick = "cal.borrarCE()">
+            <input type="button" value = "+" onClick = "cal.suma()">
+            <input type="button" value = "√" onClick = "cal.raiz()">
+            <input type="button" value = "+/-" onClick = "cal.masMenos()">
+            <input type="button" value = "Enter" onClick = "cal.enter()">
+            <input type="submit" value="Send the info">
 
-        <p>Suma tres valores: Para realizar la operación suma de 5+4+2 se deben seguir los siguientes pasos:</p>
-        <ul>
-            <li>Se introduce el valor 5 y se pulsa Enter</li>
-            <li>Se introduce el valor 4 y se pulsa Enter</li>
-            <li>Se introduce el valor 2 y se pulsa Enter</li>
-            <li>Se pulsa el operador +</li>
-        </ul>
-        
-        <h2>Ejemplos operaciones especiales</h2>
-        <p>Raiz de un valor</p>
-        <ul>
-            <li>Se introduce el valor y se pulsa Enter</li>
-            <li>Se pulsa el simbolo raiz</li>
-        </ul>
-        <p>Operaciones combinadas: Ejemplo (2+3)*(4-1)</p>
-        <ul>
-            <li>Se introduce el valor 2 y se pulsa Enter</li>
-            <li>Se introduce el valor 3 y se pulsa Enter</li>
-            <li>Se pulsa el simbolo +</li>
-            <li>Se introduce el valor 4 y se pulsa Enter</li>
-            <li>Se introduce el valor 1 y se pulsa Enter</li>
-            <li>Se pulsa el simbolo -</li>
-            <li>Se pulsa el simbolo *</li>
-        </ul>
+            
+
+        </form>
+
         <footer>
             <img src= "multimedia/HTML5.png" alt= "HTML5 válido!">
             <img src= "multimedia/CSS3.png" alt= "CSS3 válido!">
