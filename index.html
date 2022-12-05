@@ -1,20 +1,19 @@
 <!DOCTYPE HTML>
 
-<html lang="es">
-<head>
+<html lang="es"><head>
     <!-- Datos que describen el documento -->
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <title>Ejercicio 7 JQuery</title>
-    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" >
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css">
     <!--Metadatos de los documentos HTML5-->
-    <meta name ="author" content ="José Rodríguez Rico" >
-    <meta name ="description" content ="Ejercicio para aprender los conocimientos basicos de JQuery" >
-    <meta name ="keywords" content ="Laravel, tecnología, herramienta, framework" >
+    <meta name="author" content="José Rodríguez Rico">
+    <meta name="description" content="Ejercicio para aprender los conocimientos basicos de JQuery">
+    <meta name="keywords" content="Laravel, tecnología, herramienta, framework">
 
     <!--Definición de la ventana gráfica-->
-    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="Ejercicio7.js" ></script>
+    <script src="Ejercicio7.js"></script>
 </head>
 
 <body>
@@ -25,8 +24,8 @@
 
 
     <section>
-        <h2>Laravel: Una herramienta útil</h2>
-        <p>
+        <h2>Titulo cambiado</h2>
+        <p style="display: none;">
             Laravel es un framework de código abierto para desarrollar aplicaciones y servicios web con PHP 5, PHP 7 y PHP 8. 
             Su filosofía es desarrollar código PHP de forma elegante y simple, evitando el "código espagueti". Fue creado en 2011 y tiene una gran influencia de frameworks como Ruby on Rails, Sinatra y ASP.NET MVC.2
             Laravel tiene como objetivo ser un framework que permita el uso de una sintaxis elegante y expresiva para crear código de forma sencilla y permitiendo multitud de funcionalidades. 
@@ -39,7 +38,7 @@
         </p>
         <table>
             <caption> Libros Laravel </caption>
-            <tr>
+            <tbody><tr>
                 <th scope="col" id="fila/col">fila/columna </th>
                 <th scope="col" id="nombre">Nombre </th>
                 <th scope="col" id="autor">Autor </th>
@@ -81,7 +80,7 @@
                 <td headers="autor">Sanjib Sinha </td>
                 <td headers="año">2019 </td>
             </tr>
-        </table>
+        </tbody></table>
 
         <h2>Principales características</h2>
         <p>La herramienta Laravel cuenta con una serie de características con las que los desarrolladores puede construir sus aplicaciones web de una forma rápida y sencilla.
@@ -89,17 +88,17 @@
         </p>
         <ul>
             <li>Sistema de enrutamiento, también RESTful
-            <li>Soporte para el caché
-            <li>Soporte para MVC10
+            </li><li>Soporte para el caché
+            </li><li>Soporte para MVC10
                 <ul>
                     <li>Librerías y modularidad</li>
                     <li>Seguridad mediante librerías como BCrypt</li>
                 </ul>
-            <li>Gestión de sesiones
-            <li>Sistema de autenticación
-            <li>Un sistema para creación de colas de trabajo
-            <li>La posibilidad de acceder a datos en realtime
-        </ul>
+            </li><li>Gestión de sesiones
+            </li><li>Sistema de autenticación
+            </li><li>Un sistema para creación de colas de trabajo
+            </li><li>La posibilidad de acceder a datos en realtime
+        </li></ul>
 
         <p>Botones tarea:1, ocultar primer parrafo</p>
             <input type="button" value="Ocultar Parrafo" onclick="object.ocultarTitulos()">
@@ -108,7 +107,7 @@
             <input type="button" value="ModificarH2" onclick="object.modificarH2()">
             <input type="button" value="H2Original" onclick="object.h2Original()"> 
         <p>Botones tarea:3, añadir elementos HTML5 </p>
-            <input type="button" value="AñadirH4" onclick="object.addH4()">
+            <h4> Titulo añadido con JQuery</h4><input type="button" value="AñadirH4" onclick="object.addH4()">
             <input type="button" value="AñadirP" onclick="object.addP()"> 
         <p>Botones tarea:4, eliminar h4 creado anteriormente </p>
             <input type="button" value="BorrarH4" onclick="object.removeH4()">
@@ -116,7 +115,7 @@
             <input type="button" value="Recorrer" onclick="object.recorrer()">
 
         <p>Botones tarea:6, sumar filas y columnas de la tabla </p>
-            <input type="button" value="ContarRC" onclick="object.contarRC()">
+            <input type="button" value="ContarRC" onclick="object.contarRC()"><p>  Filas: 6 Columnas: 3 Total: 9</p>
     </section>
     
 
@@ -124,9 +123,9 @@
     <footer>
         <h3>Gracias por tu visita</h3>
         <p>La página se encuentra validada por las herramientas de adaptabilidad y accesibilidad</p>
-        <img src= "multimedia/HTML5.png" alt= "HTML5 válido!" >
-        <img src= "multimedia/CSS3.png" alt= "CSS3 válido!" >
+        <img src="multimedia/HTML5.png" alt="HTML5 válido!">
+        <img src="multimedia/CSS3.png" alt="CSS3 válido!">
     </footer>
 
-</body>
-</html>
+
+</body></html>
