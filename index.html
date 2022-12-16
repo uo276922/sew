@@ -2,12 +2,12 @@
 <html lang="es"><head>
         <!-- Datos que describen el documento -->
         <meta charset="UTF-8">
-        <title>Ejercicio 3 php</title>
-        <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css">
+        <title>Ejercicio 6 php y mysql</title>
+        <link rel="stylesheet" type="text/css" href="Ejercicio6.css">
         <!--Metadatos de los documentos HTML5-->
         <meta name="author" content="José Rodríguez Rico">
-        <meta name="description" content="Ejercicio 1: Calculadora RPN">
-        <meta name="keywords" content="Calculadora">
+        <meta name="description" content="Ejercicio 6 mysql">
+        <meta name="keywords" content="MySql">
         <!--Definición de la ventana gráfica-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -17,36 +17,138 @@
 
     
         <h1>
-            Calculadora RPN
+        Ejercicio 6 MySql
         </h1>
         
-        <label for="pantalla">Autor: José Rodríguez Rico</label>
-        <label for="pantalla2">Versión: V1.0</label>
-        <form action="#" method="post">
-            <textarea id="pantalla" cols="50" disabled=""></textarea>
-            <input type="text" id="pantalla2" value="" name="pantalla" readonly="">
-            <input type="submit" value="Shift" name="Shift">
-            <input type="submit" value="sin" name="sin">
-            <input type="submit" value="cos" name="cos">
-            <input type="submit" value="tan" name="tan">
-            <input type="submit" value="7" name="7">
-            <input type="submit" value="8" name="8">
-            <input type="submit" value="9" name="9">
-            <input type="submit" value="/" name="/">
-            <input type="submit" value="4" name="4">
-            <input type="submit" value="5" name="5">
-            <input type="submit" value="6" name="6">
-            <input type="submit" value="*" name="*">
-            <input type="submit" value="1" name="1">
-            <input type="submit" value="2" name="2">
-            <input type="submit" value="3" name="3">
-            <input type="submit" value="+" name="+">
-            <input type="submit" value="0" name="0">
-            <input type="submit" value="," name=",">
-            <input type="submit" value="CE" name="CE">
-            <input type="submit" value="-" name="-">
-            <input type="submit" value="+/-" name="+/-">
-            <input type="submit" value="Enter" name="Enter">
+        <h3>
+            Creación de la Base de Datos:
+        </h3>
+        <form action="#" method="post" name="CrearBase">
+            <input type="submit" value="crearBase" name="crearBase">
         </form>
+        <p></p>
+
+        <h3>
+            Creación de la tabla PruebasUsabilidad:
+        </h3>
+        <form action="#" method="post" name="CrearTabla">
+            <input type="submit" value="crearTabla" name="crearTabla">
+        </form>
+        <p></p>
+
+        <h3>
+            Insertar datos en la tabla:
+        </h3>
+        <form action="#" method="post" name="InsertarDatos">
+            <label for="dni">DNI</label>
+            <input id="dni" type="text" name="dni">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="nombre">
+            <label for="apellidos">Apellidos</label>
+            <input id="apellidos" type="text" name="apellidos">
+            <label for="email">Email</label>
+            <input id="email" type="text" name="email">
+            <label for="telefono">Telefono</label>
+            <input id="telefono" type="text" name="telefono">
+            <label for="edad">Edad</label>
+            <input id="edad" type="number" name="edad">
+            <label for="sexo">Sexo</label>
+            <input id="sexo" type="text" name="sexo">
+            <label for="nivel">Nivel Informatico</label>
+            <input id="nivel" type="number" name="nivel">
+            <label for="tiempo">Tiempo Empleado</label>
+            <input id="tiempo" type="number" name="tiempo">
+            <label for="tarea">Tarea correcta</label>
+            <input id="tarea" type="text" name="tarea">
+            <label for="comen">Comentario</label>
+            <input id="comen" type="text" name="comen">
+            <label for="mejora">Mejora</label>
+            <input id="mejora" type="text" name="mejora">
+            <label for="valoracion">Valoracion</label>
+            <input id="valoracion" type="number" name="valoracion">
+            <input type="submit" value="insertarDatos" name="insertarDatos">
+        </form>
+        <p></p>
+
+        <h3>
+            Buscar datos por DNI:
+        </h3>
+        <form action="#" method="post" name="BuscarDatos">
+            <label for="dniBuscar">DNI a buscar</label>
+            <input id="dniBuscar" type="text" name="dniBuscar">
+            <input type="submit" value="buscarDatos" name="buscarDatos">
+        </form>
+        <p>[dni] = 12; [nombre] = Barreo; [apellidos] = Rodriguez; [email]= barreo@email; [telefono] = 3235146; [edad] = 21; [sexo] = M; [nivel informatico] = 10; [tiempo] = 78; [tarea correcta] = Si; [comentario] = Buen trabajo; [mejora] = ninguna; [valoracion] = 8</p>
+        
+        <h3>
+            Modificar datos por DNI:
+        </h3>
+        <form action="#" method="post" name="modificarDatos">
+            <label for="dniMod">DNI persona a modificar</label>
+            <input id="dniMod" type="text" name="dniMod">
+            <label for="nombreMod">Nombre</label>
+            <input id="nombreMod" type="text" name="nombreMod">
+            <label for="apellidosMod">Apellidos</label>
+            <input id="apellidosMod" type="text" name="apellidosMod">
+            <label for="emailMod">Email</label>
+            <input id="emailMod" type="text" name="emailMod">
+            <label for="telefonoMod">Telefono</label>
+            <input id="telefonoMod" type="text" name="telefonoMod">
+            <label for="edadMod">Edad</label>
+            <input id="edadMod" type="number" name="edadMod">
+            <label for="sexoMod">Sexo</label>
+            <input id="sexoMod" type="text" name="sexoMod">
+            <label for="nivelMod">Nivel Informatico</label>
+            <input id="nivelMod" type="number" name="nivelMod">
+            <label for="tiempoMod">Tiempo Empleado</label>
+            <input id="tiempoMod" type="number" name="tiempoMod">
+            <label for="tareaMod">Tarea correcta</label>
+            <input id="tareaMod" type="text" name="tareaMod">
+            <label for="comenMod">Comentario</label>
+            <input id="comenMod" type="text" name="comenMod">
+            <label for="mejoraMod">Mejora</label>
+            <input id="mejoraMod" type="text" name="mejoraMod">
+            <label for="valoracionMod">Valoracion</label>
+            <input id="valoracionMod" type="number" name="valoracionMod">
+            <input type="submit" value="modificar" name="modificar">
+        </form>
+        <p></p>
+
+        <h3>
+            Borrar datos por DNI:
+        </h3>
+        <form action="#" method="post" name="BorrarDatos">
+            <label for="dniBorrar">DNI persona a borrar</label>
+            <input id="dniBorrar" type="text" name="dniBorrar">
+            <input type="submit" value="borrar" name="borrar">
+        </form>
+        <p></p>
+
+        <h3>
+            Exportar datos a csv:
+        </h3>
+        <form action="#" method="post" name="exportarDatos">
+            <input type="submit" value="exportar" name="exportar">
+        </form>
+        <p></p>
+
+        <h3>
+            Importar datos de csv:
+        </h3>
+        <form action="#" method="post" enctype="multipart/form-data" name="importarDatos">
+            <label for="csv">Importar archivo csv</label>
+            <input id="csv" type="file" name="csv">
+            <input type="submit" value="añadir datos" name="importar">
+        </form>
+        <p></p>
+
+        <h3>
+            Generar informe:
+        </h3>
+        <form action="#" method="post" name="informe">
+            <input type="submit" value="informe" name="informe">
+        </form>
+        <ul></ul>
+    
 
 </body></html>
